@@ -1,0 +1,24 @@
+{
+  "name": "joi-validate-middleware",
+  "version": "1.0.1",
+  "description": "Validate middleware generator using Joi",
+  "main": "lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "koa",
+    "middleware",
+    "joi",
+    "validate"
+  ],
+  "author": "Park Si-Yual",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "test"
+  ],
+  "devDependencies": {
+    "@hapi/joi": "^17.0.2"
+  }
+}
