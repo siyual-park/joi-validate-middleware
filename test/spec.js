@@ -10,7 +10,7 @@ const schema = {
   }).required()
 };
 
-const validator = joiValidateMiddleware.create(schema);
+const validate = joiValidateMiddleware.create(schema);
 
 const successRequest = {
   params: {
@@ -21,7 +21,7 @@ const successRequest = {
   }
 };
 
-validator(successRequest);
+validate(successRequest);
 console.log('success');
 
 const errorRequest = {
@@ -31,7 +31,7 @@ const errorRequest = {
 };
 
 try {
-  validator(errorRequest);
+  validate(errorRequest);
   console.log('fail');
 } catch (e) {
   console.log('success');
