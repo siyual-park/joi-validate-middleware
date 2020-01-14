@@ -1,6 +1,6 @@
 {
   "name": "joi-validate-middleware",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Validate middleware generator using Joi",
   "main": "lib",
   "scripts": {
@@ -18,6 +18,11 @@
     "lib",
     "test"
   ],
+  "homepage": "https://github.com/kdPark0723/joi-validate-middleware",
+  "bugs": {
+    "url": "https://github.com/kdPark0723/joi-validate-middleware/issues",
+    "email": "kdpark023@gmail.com"
+  },
   "devDependencies": {
     "@hapi/joi": "^17.0.2"
   }
