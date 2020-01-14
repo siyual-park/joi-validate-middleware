@@ -1,33 +1,6 @@
-# Joi Validate Middleware
-
-**Validate middleware generator using *[Joi](https://www.npmjs.com/package/@hapi/joi)(^17.0.2)***
-
-​    
-
-## Install
-
-```shell
-$ npm i joi-validate-middleware
-```
-
-​    
-
-## Usage
-
-```js
 const Joi = require('@hapi/joi');
-const joiValidateMiddleware = require('joi-validate-middleware');
+const joiValidateMiddleware = require('../lib');
 
-const schema = {
-  params: Joi.object({
-    id: Joi.number().required(),
-  }).required(),
-  body: Joi.object({
-    content: Joi.string().required(),
-  }).required()
-};
-
-/* or
 const schema = {
   params: {
     id: Joi.number().required(),
@@ -36,7 +9,6 @@ const schema = {
     content: Joi.string().required(),
   }
 };
-*/
 
 const validate = joiValidateMiddleware.create(schema);
 
@@ -64,5 +36,3 @@ try {
 } catch (e) {
   console.log('success');
 }
-```
-
